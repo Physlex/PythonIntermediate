@@ -1,0 +1,1 @@
+print("Think again, bucko")
