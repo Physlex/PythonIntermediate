@@ -41,7 +41,18 @@ while(i < 10000) :
     if (Iwindow[len(Iwindow) - 1] == " ") : 
         AddToWTW(Iwindow)
 
+def PrintList(ls: list) -> None :
+    for i, iVal in enumerate(ls) :
+        PrintType(iVal)
+
 validElements = []
 for i, iVal in enumerate(windowTowords) :
-    validElements.append( "i: %d, exl: %s " % (i, Encode(iVal)) )
-PrintType(validElements)
+    validElements.append( "i: %d, idx: %s " % (i, Encode(iVal)) )
+print("Printing valid elements: ")
+PrintList(validElements)
+
+validStrings = []
+for x, xVal in enumerate(windowTowords) :
+    validStrings.append("x: %d, xVal: %s " % (i, xVal))
+print("\nPrinting valid strings")
+PrintList(validStrings)
