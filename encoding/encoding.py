@@ -38,7 +38,7 @@ while(i < 10000) :
     if (Iwindow[0] == " ") :
         AddToWTW(Iwindow)
 
-    if (Iwindow[len(Iwindow) - 1] == " ") : 
+    if (Iwindow[len(Iwindow) - 1] == " ") :
         AddToWTW(Iwindow)
 
 def PrintList(ls: list) -> None :
